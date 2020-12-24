@@ -1,0 +1,70 @@
+\documentclass[12pt,twoside]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{listings}
+\graphicspath{{images/}}
+\usepackage[a4paper, width =150mm, top = 25mm, bottom = 25mm, bindingoffset=6mm]{geometry}
+
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{natbib}
+
+\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhead{}
+\fancyhead[RO, LE]{A Virtual Real Brain}
+%\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,CE]{chapter \thechapter}
+\fancyfoot[CO, RE]{Author Name}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+\title{
+{A Virtual Real Brain}\\
+{\large Name of Institute}\\
+%{\includegraphics[scale=0.4]{logo.jpg}}
+}
+
+\author{Suryansh Shukla}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+%\chapter*{Abstract}
+%\chapter*{Dedication}
+%\chapter*{Declaration}
+%\chapter*{Acknowledgement}
+\addtocontents{toc}{\protect\hypertarget{toc}{}}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Introduction to Project}
+\input{chapter/chapter01}
+
+\chapter{Python simulation of m and h}
+\input{chapter/chapter02}
+
+\chapter{Potassium Current}
+\input{chapter/chapter03}
+
+\chapter{code}
+\input{chapter/code}
+
+
+
+\newpage
+\bibliography{references}
+\bibliographystyle{unsrt}
+
+\end{document}
+
+
+
+
