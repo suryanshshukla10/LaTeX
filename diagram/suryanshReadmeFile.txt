@@ -1,0 +1,1 @@
+Open fMRI data analysis. It's main file
