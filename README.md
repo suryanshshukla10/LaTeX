@@ -8,3 +8,5 @@
 [Beamer Presentation](https://github.com/suryanshshukla10/LaTeX/tree/main/Beamer)
 
 [Latex Cheat sheet](https://github.com/suryanshshukla10/LaTeX/blob/main/latexsheet.pdf)
+
+[Translational Word List](https://github.com/suryanshshukla10/LaTeX/blob/main/TransitionalWords.md)
