@@ -1,9 +1,13 @@
 \documentclass[12pt]{amsart}
 
-%Below are some necessary packages for your course.
 \usepackage{amsfonts,latexsym,amsthm,amssymb,amsmath,amscd,euscript}
-\usepackage{framed}
-\usepackage{fullpage}
+
+\usepackage{ragged2e} %To align text.
+\usepackage{framed} %To add frame
+\usepackage{setspace} %Setting the line space 
+\usepackage{times} %Choose Font
+\usepackage{fullpage} %Automatically set the margin
+
 \usepackage{hyperref}
     \hypersetup{colorlinks=true,citecolor=blue,urlcolor =black,linkbordercolor={1 0 0}}
 
@@ -42,66 +46,143 @@
 \nc{\on}{\operatorname}
 \nc{\Spec}{\on{Spec}}
 
-\title{Math 55a, Problem Set $n$} % IMPORTANT: Change the problemset number as needed.
-\date{\today}
+\title{Problem Set Template $2$} 
 
+\date{\today}
 \begin{document}
 
 \maketitle
 
 \vspace*{-0.25in}
 \centerline{Suryansh Shukla}
-% Just so that your CA's can come knocking on your door when you don't hand in that problemset on time...
 \centerline{home address 1}
 \centerline{home address line 2}
 \centerline{\href{myemail@gmail.com}{{\tt myemail@gmail.com}}}
 \vspace*{0.15in}
 
-\begin{framed}
-  Note: Add problem set here to be in frame. 
-\end{framed}
-
-\begin{statement}{1}
-    Write here proble set 1
-\end{statement}
-
-\begin{proof}
-    Write the solution needed. \\
-    Use definations \\
-    Use lemmas \\
-    Use proofs 
-    \begin{defn}
-    write definations here.
-
-    \end{defn}
-
-    Write equations.
-
-    \begin{align*}
-        0 &= 0 + 0 + 0 + 0 + \dots\\
-        &= (1 - 1) + (1 - 1) + \dots \\
-        &= 1 + (-1 + 1) + (-1 + 1) + \dots \\
-        &= 1 + 0 + 0 + 0 \dots \\
-        &= 1.
-    \end{align*}
-
-    If you need to list things, use {\tt enumerate} or {\tt itemize}; e.g. Daily Schedule:
+%%Spacing %%
+\begin{doublespace} %To add the double space 
+\end{doublespace}
+\singlespace %single space whole document 
+\doublespace %Double Space whole document
+%%%%
+\textbf{Bullets}
+\begin{verbatim} 
     \begin{enumerate}
         \item Do Math 55 problemset.
         \item Do Math 55 problemset.
         \item Do Math 55 problemset.
     \end{enumerate}
-    And {\tt itemize} gives you bullet points.
+\end{verbatim}
+\textbf{Output}
+\begin{enumerate}
+    \item Do Math 55 problemset.
+    \item Do Math 55 problemset.
+    \item Do Math 55 problemset.
+\end{enumerate}
+\textbf{Defination }
+\begin{verbatim}
+    \begin{defn}
+        Defination Body.
+        \end{defn}
+\end{verbatim}
+\textbf{Output}  
+\begin{defn}
+    Defination body.
+\end{defn}
+
+\textbf{Proof}
+\begin{verbatim}
+    \begin{proof}
+        Add proof body here. 
+    \end{proof}
+\end{verbatim}
+\textbf{Output}
+\begin{proof}
+    Add proof body here. 
 \end{proof}
 
-\begin{statement}{2}
- Problem set 2
-\end{statement}
-\begin{proof}
-   Write proof.
-\end{proof}
+\textbf{Frame \& problem set}
+\begin{verbatim}
+    \begin{framed}
+        \begin{statement}{Problem 1}
+            Add the problem statement here.
+        \end{statement}
+    \end{framed}
+\end{verbatim}
 
-\begin{proof}
-    abc
-\end{proof}
+\textbf{Output}
+\begin{framed}
+    \begin{statement}{Problem 1}
+        Add the problem statement here.
+    \end{statement}
+\end{framed}
+
+\textbf{Equations}
+\\
+ADD * to not include equation numbers
+\begin{verbatim}
+\begin{align} %To add several equations
+    0 &= 0 + 0 + 0 + 0 + \dots\\
+    &= (1 - 1) + (1 - 1) + \dots \\
+    &= 1 + (-1 + 1) + (-1 + 1) + \dots \\
+    &= 1 + 0 + 0 + 0 \dots \\
+    &= 1.
+\end{align}
+\end{verbatim}
+\textbf{Output}
+\begin{align} %To add several equations
+    0 &= 0 + 0 + 0 + 0 + \dots\\
+    &= (1 - 1) + (1 - 1) + \dots \\
+    &= 1 + (-1 + 1) + (-1 + 1) + \dots \\
+    &= 1 + 0 + 0 + 0 \dots \\
+    &= 1.
+\end{align}
+\textbf{Alternative Command for adding single equation}
+\begin{verbatim}
+    \begin{equation}
+        E = m*c^2
+    \end{equation}
+\end{verbatim}
+\textbf{Output}
+\begin{equation}
+    E = m*c^2
+\end{equation}
+
+\textbf{Text Alignment}
+\begin{verbatim}
+    \usepackage{ragged2e}
+    \justify
+    \Centering
+    \RaggedLeft
+    \RaggedRight
+\end{verbatim}
+
+\textbf{Table}
+\begin{verbatim}
+    \begin{center}
+        \begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}| }
+            \hline \hline
+         cell1 & cell2 & cell3 \\ 
+         \hline\hline
+         cell4 & cell5 & cell6 \\ 
+         \hline 
+         cell7 & cell8 & cell9\\
+         \hline  
+        \end{tabular}
+        \end{center}
+\end{verbatim}
+\textbf{Output}
+\begin{center}
+    \begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}| }
+        \hline \hline
+     cell1 & cell2 & cell3 \\ 
+     \hline\hline
+     cell4 & cell5 & cell6 \\ 
+     \hline 
+     cell7 & cell8 & cell9\\
+     \hline  
+    \end{tabular}
+    \end{center}
 \end{document}
+
