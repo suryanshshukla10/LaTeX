@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: StartPages/cover.aux
+A level-1 auxiliary file: StartPages/abstract.aux
+A level-1 auxiliary file: StartPages/copyright.aux
+A level-1 auxiliary file: StartPages/DECLARATION.aux
+A level-1 auxiliary file: StartPages/ACKNOWLEDGEMENTS.aux
+A level-1 auxiliary file: StartPages/contents.aux
+A level-1 auxiliary file: StartPages/FiguresTables.aux
+A level-1 auxiliary file: StartPages/symbols.aux
+A level-1 auxiliary file: Chapters/chap1.aux
+A level-1 auxiliary file: Chapters/chap2.aux
+A level-1 auxiliary file: Chapters/chap3.aux
+A level-1 auxiliary file: Chapters/chap4.aux
+A level-1 auxiliary file: Chapters/chap5.aux
+The style file: agsm.bst
+A level-1 auxiliary file: Chapters/appendix.aux
+Database file #1: References/refFile.bib
+You've used 2 entries,
+            2909 wiz_defined-function locations,
+            668 strings with 5457 characters,
+and the built_in function-call counts, 10515 in all, are:
+= -- 1709
+> -- 159
+< -- 0
++ -- 832
+- -- 49
+* -- 931
+:= -- 2085
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 28
+chr.to.int$ -- 2
+cite$ -- 2
+duplicate$ -- 32
+empty$ -- 74
+format.name$ -- 58
+if$ -- 1886
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 2
+newline$ -- 9
+num.names$ -- 21
+pop$ -- 5
+preamble$ -- 1
+purify$ -- 30
+quote$ -- 0
+skip$ -- 28
+stack$ -- 0
+substring$ -- 2447
+swap$ -- 6
+text.length$ -- 28
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 0
+while$ -- 46
+width$ -- 0
+write$ -- 28
